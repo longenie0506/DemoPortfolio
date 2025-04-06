@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <main id="main" class="main">
+        <div id="layout1" class="layout">
+
+            <!-- Slideshow container -->
+            <div id="slideshow" class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/01-gravity.png" class="slideshow-img" >
+                <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/02-mappa.png" class="slideshow-img" >
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/theme1.jpg" class="slideshow-img" >
+                <div class="text">Caption Three</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div id="layout2"  class="layout">
+            <div id="layout2-left">
+                <div id="frameborder">
+                    <img id="frameimg" src="images/theme1.jpg" alt="">
+                </div>
+                <div id="framecontrol">
+                    <a class="frameprev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="framenext" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div id="layout2-right">
+                <div id="title">asdadada</div>
+                <div id="description">sdadsadsad</div>
+            </div>
+        </div>
+        <div id="layout3"  class="layout">
+            <div id="gallery">
+                <div id="gallery-info">PROJECTS GALLERY</div>
+                <div id="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/01-gravity.png" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/02-mappa.png" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/theme1.jpg" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/01-gravity.png" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/02-mappa.png" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/theme1.jpg" alt="" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="layout4" class="layout4">
+            <div id="footer">
+                <div id="footer-logo">
+                    <img id="footer-img" src="images/linkedin.svg" alt="">
+                </div>
+                <div id="footer-info">
+                    <div id="footer-outro">
+                        This is template page for information
+                    </div>
+                    <div class="footer-contact">
+                        099999999
+                    </div>
+                    <div class="footer-contact">
+                        mail@gmail.com
+                    </div>
+                    <div class="footer-contact">
+                        1 Tran Phu Street, TPHCM, VN
+                    </div>
+                </div>
+                <div id="footer-channel">
+                    <a class="footer-items" href="#">Facebook</a>
+                    <a class="footer-items" href="#">YouTube</a>
+                    <a class="footer-items" href="#">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="topbar">
+        <a href="index.html" class="top-link">
+            <div class="top-button">Home</div>
+        </a>
+        <a href="project.html" class="top-link">
+            <div class="top-button">My Project</div>
+        </a>
+        <a href="#" class="top-link">
+            <div class="top-button">Info</div>
+        </a>
+    </div>
+
+    <div id="modal">
+        <div id="modal-frame">
+            <img src="images/theme1.jpg" alt="" id="modal-img">
+        </div>
+        <div id="modal-info">
+            <div id="modal-title">PROJECT NAME</div>
+            <div id="modal-description">Description</div>
+        </div>
+        <img src="images/x-symbol-svgrepo-com.svg" alt="" id="modal-close">
+    </div>
+
+
+</body>
+
+<script src="scripts/project.js"></script>
+</html>

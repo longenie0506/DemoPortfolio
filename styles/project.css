@@ -1,0 +1,342 @@
+*{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:rgb(216, 213, 213);
+
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: rgb(29, 29, 29);
+}
+
+#main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#topbar{
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-link{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.top-button{
+    padding: 25px 50px;
+}
+
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#layout1{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------------------ slideshow CSS */
+
+#slideshow{
+  width: 100%;
+  height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .slideshow-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+#layout2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#layout2-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex:1;
+}
+
+#frameborder{
+  width: 100%;
+  height: 100%;
+}
+
+#frameimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#framecontrol{
+  width: 100%;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#layout2-right{
+  flex:1;
+}
+
+#layout3{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery{
+  width:50%;
+  min-width: 720px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  padding: 50px 0px;
+}
+
+#gallery-info{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#gallery-grid{
+  display: grid;
+  height:fit-content;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.gallery-item{
+  grid:1;
+  height:auto;
+}
+
+.gallery-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#modal{
+  position:fixed;
+  z-index: 999;
+  top: 25%;
+  bottom: 25%;
+  right: 25%;
+  left: 25%;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0%;
+  transition: opacity 0.5s;
+}
+
+#modal-frame{
+  flex:1;
+  width: 100%;
+  height: 100%;
+}
+
+#modal-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#modal-info{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+#modal-close{
+  position:fixed;
+  right: 25%;
+  top: 25%;
+  width: 20px;
+  height: 20px;
+}
+
+/* FOOTER */
+
+#layout4{
+  width: 100%;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer{
+  width: 60%;
+  min-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-logo{
+  width: 200px;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 8px;
+}
+
+#footer-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#footer-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-channel{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:end;
+  gap: 20px
+}
+
+.footer-items{
+  width: 100%;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color:rgb(29, 29, 29);
+  text-align: center;
+}
